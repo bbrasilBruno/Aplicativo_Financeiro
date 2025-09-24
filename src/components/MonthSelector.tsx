@@ -1,4 +1,3 @@
-import React from 'react'
 import { format, addMonths, subMonths, isSameMonth } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { ChevronLeft, ChevronRight, Calendar } from 'lucide-react'

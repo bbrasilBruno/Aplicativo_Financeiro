@@ -1,4 +1,3 @@
-import React from 'react'
 import { format } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { TrendingUp, TrendingDown, Edit, Trash2, Repeat } from 'lucide-react'

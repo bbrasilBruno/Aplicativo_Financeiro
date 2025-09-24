@@ -30,8 +30,6 @@ import {
 } from '@/lib/validations'
 
 interface AddTransactionDialogProps {
-  open: boolean
-  setOpen: (value: boolean) => void
   onAddTransaction: (transaction: Omit<Transaction, 'id'>) => void
   editingTransaction?: Transaction | null
   onUpdateTransaction?: (transaction: Transaction) => void

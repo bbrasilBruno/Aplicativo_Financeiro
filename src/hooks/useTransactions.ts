@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { format, startOfMonth, endOfMonth } from 'date-fns'
-import { ptBR } from 'date-fns/locale'
+import { startOfMonth, endOfMonth } from 'date-fns'
 import type { Transaction } from '@/lib/supabaseClient'
 import {
   fetchTransactions,

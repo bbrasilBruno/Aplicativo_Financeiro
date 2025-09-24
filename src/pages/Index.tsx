@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Wallet, Wifi, WifiOff } from 'lucide-react'
 import { MonthSelector } from '@/components/MonthSelector'
 import { BalanceCard } from '@/components/BalanceCard'
@@ -14,7 +14,6 @@ export function Index() {
   const [editingTransaction, setEditingTransaction] = useState<Transaction | null>(null)
   
   const {
-    transactions,
     isLoading,
     isOnlineMode,
     addTransaction,
@@ -37,9 +36,6 @@ export function Index() {
     setEditingTransaction(null)
   }
 
-  const handleCloseEdit = () => {
-    setEditingTransaction(null)
-  }
 
   if (isLoading) {
     return (
